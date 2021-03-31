@@ -32,68 +32,69 @@
   <body>
     <div class="container">
       <header class="header">
-        <img class="imgHead" src="Reservia.svg"  alt="logo reservia" title="Reservia"/>
-
-        <nav class="d-flex nav " >
-          <a class="Navlink"  href="#hebergement">hébergement</a>
-          <a class="avlink" href="#activites">Activités</a>
-          <a class="Navlink" href="#S'inscire"><strong>S'inscire</strong></a>
-     </nav> 
-    </header>
+        <img class="headerImg" src="Reservia.svg" alt="Reservia">
+        <nav class="headerNav">
+          <a class="headerNavLink" href="#hosting" data-active="true">Hébergement</a>
+          <a class="headerNavLink" href="#activity" data-active="false">Activités</a>
+        </nav>
+        <a class="headerSignup" href="#">S'inscrire</a>
+      </header>
 
 <!-- MAIN -->
 <main class="main">
   <!-- SEARCH -->
   <section class="search">
     <header class="">
-      <h1 class="TitleM">
+      <h1 class="title_hebergement">
         Trouvez votre hébergement pour des vacances de rêve
       </h1>
 
-      <p class="subTitleM">
+      <p class="sub_hebergement_title">
         En plein centre de ville ou en pleine nature
       </p>
     </header>
 
-    <form class="searchForm"  >
-      <span class="searchFormIcon">
-        <i class="fas fa-map-marker-alt"></i>
+    <form class="container_recherche"  >
+      <span class="recherche_geo_Icon">
+        <i class="fas fa-map-marker-alt" ></i>
       </span>
-      <input class="searchFormSearchinput" type="search" placeholder="Marseille, France" size="1"  />
-      <button class="searchFormSubmitinput">
-        <span class="searchFormSubmitinputText">Rechercher</span>
+      <input class="conteiner_bottom_recherche" type="search" placeholder="Marseille, France" size="1"  />
+      <button class="bottom_recherche">
+        <span class="bottom_recherche_text">Rechercher</span>
+        <i class="i_recherche_responsive fas fa-search"></i>
       </button>
     </form>
-    <div class="searchFilters d-flex-wrap">
-      <h2 class="searchFiltersTitle">Filtres</h2>
-      <div class="searchFiltersFilter">
-        <div class="searchFiltersFilterWrapicon">
+    
+    <div class="container_filter d-flex-wrap">
+      <h2 class="filter_Title">Filtres</h2>
+      <div class="filtre_container_icon_title">
+        <div class="filtre_icon">
           <i class="fas fa-money-bill-wave blue"></i>
         </div>
-        <span class="searchFiltersFilterTitle">Économique</span>
+        <span class="filtre_text">Économique</span>
       </div>
-      <div class="searchFiltersFilter">
-        <div class="searchFiltersFilterWrapicon">
+      <div class="filtre_container_icon_title">
+        <div class="filtre_icon">
           <i class="fas fa-child blue"></i>
         </div>
-        <span class="searchFiltersFilterTitle">Familial</span>
+        <span class="filtre_text">Familial</span>
       </div>
-      <div class="searchFiltersFilter">
-        <div class="searchFiltersFilterWrapicon">
+      <div class="filtre_container_icon_title">
+        <div class="filtre_icon">
           <i class="fas fa-heart blue"></i>
         </div>
-        <span class="searchFiltersFilterTitle">Romantique</span>
+        <span class="filtre_text">Romantique</span>
       </div>
-      <div class="searchFiltersFilter">
-        <div class="searchFiltersFilterWrapicon">
+      <div class="filtre_container_icon_title">
+        <div class="filtre_icon">
           <i class="fas fa-dog blue"></i>
         </div>
-        <span class="searchFiltersFilterTitle">Animaux autorisés</span>
+        <span class="filtre_text">Animaux autorisés</span>
       </div>
     </div>
-    <div class="searchResult">
-      <div class="searchResultWrapicon"><i class="fas fa-info"></i></div>
-      <p class="searchResultText">
+    <div class="container_logements_disponibles">
+      <div class="disponible_icon"><i class="fas fa-info"></i></div>
+      <p class="text_logements_disponibles">
         Plus de 500 logements sont disponibles dans cette ville
       </p>
     </div>
