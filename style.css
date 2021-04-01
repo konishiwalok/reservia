@@ -119,6 +119,7 @@ a {
   margin: auto;
   padding: 0 2rem;
   box-sizing: border-box;
+ 
 }
 
 .title_hebergement {
@@ -240,6 +241,7 @@ line-height: 1;
   height:7px;
   width:7px;
   padding:8px;
+  
   margin-right: 0.5em;
   color: #0065FC;
 }
@@ -248,79 +250,46 @@ line-height: 1;
   margin: 0;
 }
 
+/*SECTION -ASIDE*HEBERGEMENTS POPULAIRES */
 
 
+.hebergement_marseille_populaire
+{
+background-color:forestgreen;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 601px) {
-  .header {
-    grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "logo . navbar button";
-  }
-  .headerNavLink[data-active=true] {
-    border-top: 3px solid #0065FC;
-  }
-  .headerNavLink:hover {
-    border-top: 3px solid #0065FC;
-  }
 }
-@media screen and (max-width: 600px) {
-  .header {
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "logo . button" "navbar navbar navbar";
-  }
 
+.container_hebergement
+{
 
-
-
-
-
-@media screen and (max-width: 600px) {
-  .container_recherche {
-    display: flex;
-    width: 100%;
-  }
-  .conteiner_bottom_recherche {
-    flex: 1;
-  }
-  .bottom_recherche_text {
-    display: none;
-  }
-  .i_recherche_responsive {
-    display: block;
-  }
 }
-@media screen and (max-width: 650px) {
-  .filter_Title {
-    width: 100%;
-  }
-  .filtre_container_icon_title {
-    margin-right: 1rem;
-  }
+.hebergement_container_titre
+{
+
 }
-@media screen and (min-width: 601px) {
-  .bottom_recherche_text {
-    display: block;
-  }
-  .i_recherche_responsive {
-    display: none !important;
-  }
+.hebergement_titre
+{
+
 }
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+img
+{height:22px;
+  width:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
