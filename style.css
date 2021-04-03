@@ -1,5 +1,3 @@
-
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 body {
   font-family: "Raleway", "Sans serif";
@@ -17,7 +15,7 @@ a {
   max-width: 1440px;
   margin: auto;
 }
-.headerImg {
+.logoReservia {
   grid-area: logo;
   padding: 0 2rem;
   height: 2.813rem;
@@ -27,7 +25,7 @@ a {
   align-items: center;
   grid-area: navbar;
 }
-.menuLink {
+.menu_options {
   padding: 2rem;
   font-weight: 500;
   text-align: center;
@@ -35,13 +33,13 @@ a {
   border-top: 3px transparent solid;
   border-bottom: 3px transparent solid;
 }
-.menuLink[data-active=true] {
+.menu_options[data-active=true] {
   color: #0065FC;
 }
-.menuLink:hover {
+.menu_options:hover {
   color: #0065FC;
 }
-.menulink_inscription {
+.menu_options_inscription {
   display: flex;
   align-items: center;
   grid-area: button;
@@ -55,10 +53,10 @@ a {
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "logo . navbar button";
   }
-  .menuLink[data-active=true] {
+  .menu_options[data-active=true] {
     border-top: 3px solid #0065FC;
   }
-  .menuLink:hover {
+  .menu_options:hover {
     border-top: 3px solid #0065FC;
   }
 }
@@ -67,28 +65,28 @@ a {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . button" "navbar navbar navbar";
   }
-  .headerimg {
+  .logoReservia {
     order: 0;
   }
-  .menulink_inscription {
+  .menu_options_inscription {
     order: 1;
   }
   .menu {
     order: 2;
   }
-  .menuLink {
+  .menu_options{
     border-top: none;
     border-bottom: 3px solid #F2F2F2;
     width: 50%;
   }
-  .menuLink[data-active=true] {
+  .menu_options[data-active=true] {
     border-bottom-color: #0065FC;
   }
-  .menuLink:hover {
+  .menu_options:hover {
     border-bottom-color: #0065FC;
   }
 }
-.page_bloc{
+.page_bloc {
   max-width: 1440px;
   margin: auto;
   padding: 0 2rem;
@@ -101,21 +99,21 @@ a {
 .Sub_titre_head {
   margin-top: 0;
 }
-.searchForm {
+.bande_recherche{
   display: inline-flex;
   max-width: 100%;
   overflow: auto;
 }
-.recherche_icon {
+.icon_recherche_geolocalisation {
   background-color: #F2F2F2;
   padding: 1rem 1.25rem;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
 }
-.recherche_icon i {
+.icon_recherche_geolocalisation i {
   margin-left: 0.1rem;
 }
-.searchFormSearchinput {
+.box_recherche {
   border-right: none;
   border-left: none;
   border-top: #F2F2F2 1px solid;
@@ -127,12 +125,12 @@ a {
   font-weight: bold;
   font-family: "Raleway", "Sans serif";
 }
-.searchFormSearchinput::placeholder {
+.box_recherche::placeholder {
   font-family: "Raleway", "Sans serif";
   font-size: 1rem;
   color: #00000069;
 }
-.blue_bottom{
+.bottom_blue {
   background-color: #0065FC;
   color: white;
   font-weight: bold;
@@ -143,21 +141,17 @@ a {
   font-size: 1rem;
   cursor: pointer;
 }
-.blue_bottom i 
-{
-  display:none;
-}
-.searchFilters {
+.container_principal_filtre {
   display: flex;
   margin-top: 2rem;
   flex-wrap: wrap;
 }
-.searchFiltersTitle {
+.filtre_titre {
   margin: 0 2rem 1rem 0;
   display: flex;
   align-items: center;
 }
-.container_filtres {
+.container_icones_filtre {
   display: flex;
   align-items: center;
   margin-right: 2rem;
@@ -168,14 +162,14 @@ a {
   transition-duration: 0.1s;
   font-weight: bold;
 }
-.container_filtres:last-child {
+.container_icones_filtre:last-child {
   margin-right: 0;
 }
-.container_filtres:hover {
+.container_icones_filtre:hover {
   background-color: #f3f8ff;
   transform: scale(1.015);
 }
-.filtres {
+.filtres_de_recherche_icon {
   background-color: #DEEBFF;
   border-radius: 100%;
   height: 3rem;
@@ -187,18 +181,18 @@ a {
   justify-content: center;
   margin: -2px;
 }
-.filtres i {
-  color: rgb(38, 165, 21);
+.filtres_de_recherche_icon i {
+  color: blue;
 }
-.filtre_texte {
+.texte_filters {
   margin: 0 1rem;
 }
-.searchResult {
+.bande_info_dispo {
   display: flex;
   align-items: center;
   margin: 1rem 0 2rem 0;
 }
-.searchResultWrapicon {
+.icon_info {
   height: 2rem;
   width: 2rem;
   min-height: 2rem;
@@ -210,44 +204,62 @@ a {
   justify-content: center;
   margin-right: 1rem;
 }
-.searchResultWrapiconIcon {
+.icon_info i {
   color: #0065FC;
 }
-.searchResultText {
+.bande_info_dispo_Text {
   margin: 0;
 }
 
 @media screen and (max-width: 600px) {
-  .searchForm {
+  .bande_recherche {
     display: flex;
     width: 100%;
   }
-  .searchFormSearchinput {
+  .box_recherche {
     flex: 1;
   }
-  .blue_bottom_Text {
+  .bottom_blue_texte {
     display: none;
   }
-  .blue_bottom i {
+  .bottom_blue i {
     display: block;
   }
 }
 @media screen and (max-width: 650px) {
-  .searchFiltersTitle {
+  .filtre_titre {
     width: 100%;
   }
-  .container_filtres {
+  .container_icones_filtre {
     margin-right: 1rem;
   }
 }
 @media screen and (min-width: 601px) {
-  .blue_bottom_Text {
+  .bottom_blue_texte {
     display: block;
   }
-  .blue_bottom_Icon {
+  .bottom_blue i {
     display: none !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hostingWrapper, .hostingPopular, .hostingMain {
   background-color: #F2F2F2;
   border-radius: 1.5rem;
@@ -264,13 +276,13 @@ a {
   column-gap: 2rem;
   row-gap: 2rem;
 }
-.container_titre_hebergement {
+.container_titre_herbergement {
   grid-column: 1/-1;
 }
-.titre_hebergement {
+.titre_herbergement {
   margin: 0;
 }
-.Card_hebergement {
+.hostingMainCard {
   background-color: white;
   padding: 0.375rem;
   border-radius: 1.25rem;
@@ -280,10 +292,10 @@ a {
   box-sizing: border-box;
   height: 100%;
 }
-.Card_hebergement:hover {
+.hostingMainCard:hover {
   transform: scale(1.02);
 }
-.hostingMainCardFigure {
+.banniere_hebergement {
   margin: 0;
 }
 .hebergement_img {
@@ -294,25 +306,25 @@ a {
   max-height: 100%;
   border-radius: 1rem 1rem 0 0;
 }
-.banniere_titre {
+.nom_de_cambre {
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
-.banniere_nuit {
+.nuit_texte_bannniere {
   margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
-.price_hebergement {
+.prix_nuit {
   font-weight: bold;
 }
-.filtre_stars {
+.hostingMainCardGrade {
   margin: 0 0.75rem 0.25rem 0.75rem;
 }
-.filtre_stars i  {
+.hostingMainCardGradeIcon[data-active=true] {
   color: #0065FC;
 }
-.no_stars i  {            /*HTML LG 102 PONER STARS GREY*/
+.hostingMainCardGradeIcon[data-active=false] {
   color: #d9d9d9;
 }
-.hostingMainViewmore {
+.texte_Afficher_plus {
   font-weight: bold;
 }
 .hostingPopular {
@@ -321,36 +333,37 @@ a {
   align-items: start;
   grid-template-rows: auto repeat(3, 1fr);
 }
-.hostingPopularTitle {
+.titre_populaire {
   margin: 0;
   display: flex;
   justify-content: space-between;
 }
-.hostingPopularWrapcontent {
+.card_populaire {
   display: flex;
   align-items: stretch;
   height: 100%;
   overflow: auto;
 }
-.hostingPopularWrapcontentWrapimg {
+.conteneur_popular_img {
   position: relative;
   min-height: 100%;
   width: 33%;
   min-width: 33%;
   max-width: 33%;
 }
-.hostingPopularWrapcontentWrapimgImg {
+.popular_img
+ {
   border-radius: 1rem 0 0 1rem;
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.hostingPopularWrapcontentContent {
+.populaire_banniere {
   display: flex;
   flex-direction: column;
 }
-.hostingPopularWrapcontentContentWhitespace {
+.white_div {
   flex: 1;
 }
 .hostingPopularhostingMainCard {
@@ -524,3 +537,5 @@ a {
     margin-bottom: 0;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
