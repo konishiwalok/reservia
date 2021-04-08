@@ -91,6 +91,7 @@ a {
   margin: auto;
   padding: 0 2rem;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .titre_head {
@@ -115,8 +116,8 @@ a {
   margin-left: 0.1rem;
 }
 .box_recherche {
-  border-right: none;
-  border-left: none;
+  border-right:none;
+  border-left:none;
   border-top: #f2f2f2 1px solid;
   border-bottom: #f2f2f2 1px solid;
   padding: 0 1.5rem;
@@ -131,13 +132,17 @@ a {
 }
 .bottom_blue {
   background-color: #0065fc;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   border: none;
   border-radius: 0 1rem 1rem 0;
   padding: 0 1.5rem;
   font-size: 1rem;
   cursor: pointer;
+}
+.bottom_blue:hover
+{
+  background-color: #0053d0;
 }
 .container_principal_filtre {
   display: flex;
@@ -298,12 +303,14 @@ a {
 
 .stars_icon {
   margin: 0 0.75rem 0.25rem 0.75rem;
+  margin-top: 30px;
 }
 .stars_icon i {
   color: #0065fc;
 }
-.stars_icon iw {
-  color: #f2f2f2;
+.stars_icon .grey_stars {
+  color: #c5bdbd;
+
 }
 .texte_Afficher_plus {
   font-weight: bold;
@@ -342,10 +349,9 @@ a {
 .populaire_banniere {
   display: flex;
   flex-direction: column;
+  
 }
-.white_div {
-  flex: 1;
-}
+
 .hostingPopular hostingMainCard {
   height: 8.75rem;
 }
@@ -491,9 +497,11 @@ a {
 .footer_conctact_us {
   display: block;
   margin: 1rem 0;
+ 
 }
 .footer_conctact_us:hover {
-  text-decoration: underline;
+color: #0065fc;
+
 }
 
 @media (max-width: 750px) {
