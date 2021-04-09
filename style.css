@@ -374,6 +374,11 @@ a {
 @media (min-width: 925px) {
   .hostingMain {
     grid-template-columns: repeat(3, 1fr);
+  }  
+  .hostingPopular {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(3, 9rem);
+  
   }
 }
 @media (max-width: 925px) and (min-width: 650px) {
@@ -386,12 +391,14 @@ a {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .hostingPopular {
     grid-template-columns: 1fr;
     grid-template-rows: auto repeat(3, 9rem);
+  
   }
 }
+
 
 .activity {
   display: grid;
@@ -400,6 +407,7 @@ a {
 }
 .titre_activite_marseille {
   grid-column: 1/-1;
+  margin-bottom:20px;
 }
 .activityCard {
   box-shadow: 0 0 20px #0000002e;
