@@ -13,20 +13,22 @@
 </head>
 <body>
 
-  
-  <header class="header"><!--a cambiar de nombre-->
+  <!--HEADER+LOGO-->
+  <header class="header">
     <img class="logoReservia" src="Reservia.svg" alt="Reservia">
     <nav class="menu">
-      <a class="menu_options" href="#hosting">Hébergement</a>
-      <a class="menu_options" href="#activity" data-active="false">Activités</a>
+      <a  href="#hosting" class="menu_options">Hébergement</a>
+      <a href="#activity" class="menu_options" >Activités</a>
     </nav>
     <a class="menu_options_inscription" href="#">S'inscrire</a>
   </header>
 
   <main class="page_bloc">
-  
-    <section class="search"> <!--a cambiar de nombre-->
-      <header class="">
+
+  <!--BANDE RECHERCHE-->
+
+    <section class="search"> 
+      <header >
         <h1 class="titre_head">Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="Sub_titre_head">En plein centre de ville ou en pleine nature</p>
       </header>
@@ -76,9 +78,9 @@
 
 
 
+ <!--HEBERGEMENTS-->
 
-
-    <section class="hosting">
+    <section class="hosting" id="hosting">
       <div class="hostingMain">
         <header class="container_titre_herbergement">
           <h2 class="titre_herbergement">Hébergement à Marseille</h2>
@@ -194,11 +196,12 @@
         <a class="texte_Afficher_plus" href="#">Afficher plus</a>
       </div>
 
-
+ <!--POPULAIRE-->
 
 
       <aside class="hostingPopular">
-       <div class="title_populaire"><h2 class="titre_populaire">Les plus populaire <i class="fas fa-chart-line"></i></h2>
+       <div class="title_populaire">
+         <h2 class="titre_populaire">Les plus populaire <i class="fas fa-chart-line"></i></h2>
        </div> 
         <article class="hostingMainCard hostingPopularCard">
           <a class="card_populaire" href="#">
@@ -258,11 +261,10 @@
           </a>
         </article>
       </aside>
-      
-
     </section>
+       <!--ACTIVITY-->
 
-    <section class="activity" >
+    <section class="activity" id="activity">
       <h2 class="titre_activite_marseille">Activités à Marseille</h2>
       <a href="#" class="activityCard activityCard1">
         <div class="container_activity_img">
@@ -307,7 +309,7 @@
     </section>
   
   </main>
-
+ <!--FOOTE R-->
   <footer class="footer">
     <div class="conteneur_card_footer">
       <div class="card_footer">
@@ -322,7 +324,7 @@
         <a href="#" class="footer_conctact_us">Soumettre votre hotel</a>
       </div>
       <div class="card_footer">
-        <h3 class="footer_title">Assitance</h3>
+        <h3 class="footer_title">Assistance</h3>
         <a href="#" class="footer_conctact_us">Centre d'aide</a>
         <a href="#" class="footer_conctact_us">Nous contacter</a>
       </div>
@@ -330,5 +332,3 @@
   </footer>
   </body>
   </html>
-  
-    
