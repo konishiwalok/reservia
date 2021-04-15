@@ -487,7 +487,6 @@ a {
 .footer_conctact_us:hover {
   color: #0065fc;
 }
-
 @media (max-width: 750px) {
   .conteneur_card_footer {
     flex-direction: column;
