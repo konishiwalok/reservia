@@ -20,6 +20,7 @@ a {
   grid-area: logo;
   padding: 0 2rem;
   height: 2.813rem;
+
 }
 .menu {
   display: flex;
@@ -99,7 +100,7 @@ a {
 .bande_recherche {
   display: inline-flex;
   max-width: 100%;
-  overflow: auto;
+  /* overflow: auto; */
   margin-top: 20px;
   font-size: 20px;
 }
@@ -243,7 +244,7 @@ a {
 .hostingMain {
   background-color: #f2f2f2;
   border-radius: 1.5rem;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .hosting {
@@ -262,7 +263,7 @@ a {
 
 .hostingMainCard {
   background-color: rgb(255, 255, 255);
-  padding: 0.3165rem;
+  height: 100%;
   border-radius: 20px 15px 20px 15px;
   box-shadow: 0 0 16px #0000002e;
   cursor: pointer;
