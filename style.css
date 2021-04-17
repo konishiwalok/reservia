@@ -85,7 +85,7 @@ a {
   }
 }
  
-@media (max-width: 1650px) and (min-width: 480px) {
+@media (max-width: 4000px) and (min-width: 480px) {
   .page_bloc {
     max-width: 1440px;
     margin: auto;
