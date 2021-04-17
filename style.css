@@ -254,7 +254,11 @@ a {
 .hostingMain {
   background-color: #f2f2f2;
   border-radius: 1.5rem;
+<<<<<<< HEAD
   /* padding: 2rem; */
+=======
+ 
+>>>>>>> 99691f8336e3bd4a67a990a7debe9cff0a6f25a4
 }
 
 .hosting {
