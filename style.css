@@ -84,12 +84,22 @@ a {
     border-bottom-color: #0065fc;
   }
 }
-.page_bloc {
-  max-width: 1440px;
-  margin: auto;
-  padding: 0 2rem;
-  box-sizing: border-box;
-  overflow: hidden;
+ 
+@media (max-width: 1650px) and (min-width: 480px) {
+  .page_bloc {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+} 
+@media (max-width: 480px) {
+  .search
+  {
+    padding: 20px 20px 0px 20px;
+  }
 }
 /*TITRE ET SUBTRITE PRINCIPAL*/
 .titre_head {
@@ -256,19 +266,24 @@ a {
   display: grid;
   column-gap: 2rem;
   row-gap: 2rem;
+  padding: 20px 20px 0px 20px;
 }
 .container_titre_herbergement {
   grid-column: 1/-1;
+  padding-top: 10px;
+  
 }
 
 .hostingMainCard {
   background-color: rgb(255, 255, 255);
+  border: 5px solid  rgb(255, 255, 255);
   height: 100%;
   border-radius: 20px 15px 20px 15px;
   box-shadow: 0 0 16px #0000002e;
   cursor: pointer;
   box-sizing: border-box;
   height: 100%;
+  border: 5px solid  rgb(255, 255, 255);
 }
 .hostingMainCard:hover {
   transform: scale(1.02);
@@ -301,22 +316,28 @@ a {
 }
 .texte_Afficher_plus {
   font-weight: bold;
+  padding-bottom: 15px;
 }
 
 /*Populaire*/
 .hostingPopular {
+  background-color: #f2f2f2;
+  border-radius: 1.5rem;
   display: grid;
   row-gap: 2rem;
+  padding: 20px 20px 0px 20px;
   align-items: start;
   grid-template-rows: auto repeat(3, 1fr);
 }
 .titre_populaire {
   display: flex;
+  padding: 20px 20px 0px 20px;
   justify-content: space-between;
 }
 .card_populaire {
   display: flex;
   height: 100%;
+
 }
 .conteneur_popular_img {
   position: relative;
@@ -369,6 +390,7 @@ a {
 @media (max-width: 650px) {
   .hostingMain {
     grid-template-columns: 1fr;
+    background-color:#fff;
   }
 }
 @media (max-width: 1200px) {
@@ -376,13 +398,23 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: auto repeat(3, 9rem);
   }
-}
+  }
+  @media (max-width: 480px) {
+    .hostingPopular {
+     
+      background-color:#f2f2f2;
+      border-radius: 0;
+  
+    }
+  }
+
 /*ACTIVITY*/
 
 .activity {
   display: grid;
   column-gap: 2rem;
   margin: 4rem 0;
+  padding: 20px 20px 0px 20px;
 }
 .titre_activite_marseille {
   grid-column: 1/-1;
@@ -395,6 +427,7 @@ a {
   display: flex;
   flex-direction: column;
   transition-duration: 0.1s;
+  
 }
 .activityCard:hover {
   transform: scale(1.01);
